@@ -2,66 +2,103 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color:black;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
 }
 @keyframes rainbow {
     0% { color: red; }
-    14% { color: orange; }
-    28% { color: yellow; }
-    42% { color: green; }
-    57% { color: blue; }
-    71% { color: indigo; }
+    15% { color: orange; }
+    30% { color: yellow; }
+    45% { color: green; }
+    60% { color: blue; }
+    70% { color: indigo; }
     85% { color: violet; }
     100% { color: red; }
 }
+@keyframes parpadeo {
+    0% { color: white; }
+    20% { color: #d9d9d9; } /* Gris claro */
+    40% { color: #b3b3b3; } /* Gris medio-claro */
+    60% { color: #808080; } /* Gris medio */
+    80% { color: #4d4d4d; } /* Gris medio-oscuro */
+    100% { color: black; }
 
-.rainbow-text {
-    font-size: 50px;
+}
+
+.parpadeante {
+    font-size: 40px;
     font-weight: bold;
+    animation: parpadeo 0.3s infinite;
     text-align: center;
-    animation: rainbow 10s linear infinite;
+    padding-top: 17px;
+}
+.rainbow-text {
+    font-size: 40px;
+    font-weight: bold;
+    animation: rainbow 2s linear infinite;
+    padding-top: 17px;
 }
 .container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
+}
+.box-1:hover {
+    transform: translateY(-5px);
+}
+.box-2:hover {
+    transform: translateY(-5px);
+}
+.box-3:hover {
+    transform: translateY(-5px);
 }
 .box-1 {
     background-color: white;
+    flex: 1;
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 15px;
     width: 300px;
+    height: auto;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: right;
+    text-align:center;
+    img{
+        width: 80%;
+        height: 80%;
+        object-fit: contain;
+    }
 }
 .box-2 {
     background-color: white;
+    flex: 1;
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 15px;
     width: 300px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
+    img{
+        width: 80%;
+        height: 80%;
+        object-fit: contain;
+    }
 }
 .box-3 {
     background-color: white;
+    flex: 1;
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 15px;
     width: 300px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: left;
-}
-.box img {
-    max-width: 100%;
-    border-radius: 8px;
-}
-h2 {
-    font-size: 1.5em;
-    margin: 0 0 10px;
-}
-p {
-    font-size: 1em;
-    color: #555;
+    text-align: center;
+    img{
+        width: 80%;
+        height: 80%;
+        object-fit: contain;
+    }
 }

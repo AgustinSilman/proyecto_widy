@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background: url(../img/FONDO1.webp);
+    background: url(../img/FONDO1.webp)fixed;
 
 }
 h1{

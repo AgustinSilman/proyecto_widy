@@ -3,12 +3,7 @@ body {
     margin: 0;
     padding: 20px;
     background-color:black;
-    background-image: url('../img/FONDO2.jpg') fixed ;
-    height: 100vh;
-}
-h1{
-    text-align: center;
-    font-size: 50px;
+    background: url('../img/FONDO2.jpg') fixed ;
 }
 @keyframes parpadeo {
     0% { color: white; }

@@ -3,7 +3,8 @@ body {
     margin: 0;
     padding: 20px;
     background-color:black;
-    background: url('../img/FONDO4.jpg') fixed ;
+    background: url('../img/RODEOFONDO2.jpg') fixed ;
+    background-position:top;
 }
 
 

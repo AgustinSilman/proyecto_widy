@@ -17,16 +17,17 @@ h1{
     0% { color: red; }
     15% { color: orange; }
     30% { color: yellow; }
-    45% { color: green; }
-    60% { color: blue; }
-    70% { color: indigo; }
+    45% { color: rgb(3, 183, 3); }
+    60% { color: rgb(0, 102, 255); }
+    70% { color: rgb(125, 4, 212); }
     85% { color: violet; }
     100% { color: red; }
 }
 .rainbow-text {
     font-size: 50px;
     font-weight: bold;
-    animation: rainbow 2s linear infinite;
+    text-shadow: 2px 3px 8px black;
+    animation: rainbow 7.5s alternate infinite;
 }
 .contenedor {
             display: flex;

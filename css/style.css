@@ -7,6 +7,7 @@ body {
 h1{
     text-align: center;
     font-size: 50px;
+    color: aliceblue;
 }
 @keyframes rainbow {
     0% { color: red; }
@@ -42,8 +43,11 @@ to {color:black;}
 .container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 32px;
     justify-content: center;
+    position: absolute;
+            top: 25%;
+            left: 15%;
 }
 .box-1:hover {
     transform: translateY(-10px);

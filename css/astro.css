@@ -35,6 +35,9 @@ h1{
             gap: 20px;
             flex-wrap: wrap;
             max-width: 1200px;
+            position: absolute;
+            top: 25%;
+            left: 15%;
         }
 .caja-1 {
             flex: 1;

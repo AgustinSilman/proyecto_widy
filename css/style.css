@@ -13,18 +13,14 @@ h1{
     15% { color: orange; }
     30% { color: yellow; }
     45% { color: green; }
-    60% { color: blue; }
-    70% { color: indigo; }
-    85% { color: violet; }
-    100% { color: red; }
+    60% { color: lightblue; }
+    75% {color:blue; }
+    90% { color: rgb(124, 0, 212); }
+    100% { color: violet; }
 }
 @keyframes parpadeo {
-    0% { color: white; }
-    20% { color: #d9d9d9; } /* Gris claro */
-    40% { color: #b3b3b3; } /* Gris medio-claro */
-    60% { color: #808080; } /* Gris medio */
-    80% { color: #4d4d4d; } /* Gris medio-oscuro */
-    100% { color: black; }
+from {color:white;}
+to {color:black;}
 
 }
 
@@ -38,7 +34,7 @@ h1{
 .rainbow-text {
     font-size: 40px;
     font-weight: bold;
-    animation: rainbow 2s linear infinite;
+    animation: rainbow 7.5s alternate infinite;
     padding-top: 17px;
 }
 .container {
@@ -48,13 +44,13 @@ h1{
     justify-content: center;
 }
 .box-1:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
 }
 .box-2:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
 }
 .box-3:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
 }
 .box-1 {
     background-color: white;
@@ -66,6 +62,8 @@ h1{
     height: auto;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align:center;
+    position: relative;
+    transition: transform 0.5s ease;
     img{
         width: 80%;
         height: 80%;
@@ -81,6 +79,8 @@ h1{
     width: 300px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
+    position: relative;
+    transition: transform 0.5s ease;
     img{
         width: 80%;
         height: 80%;
@@ -96,6 +96,8 @@ h1{
     width: 300px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
+    position: relative;
+    transition: transform 0.5s ease;
     img{
         width: 80%;
         height: 80%;

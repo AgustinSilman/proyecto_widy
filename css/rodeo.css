@@ -21,6 +21,7 @@ body {
 
   .wave-text span {
     display: inline-block;
+    text-align: center;
     animation: wave 1s ease-in-out infinite;
     animation-delay: calc(var(--i) * 0.1s); /* Cada letra tiene un delay diferente */
   }
@@ -40,8 +41,8 @@ body {
     flex-wrap: wrap;
     max-width: 1200px;
     position: absolute;
-    top: 25%;
-    left: 15%;
+        top: 25%;
+        left: 15%;
 }
 .caja-1 {
     flex: 1;

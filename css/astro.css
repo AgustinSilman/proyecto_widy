@@ -3,7 +3,8 @@ body {
     margin: 0;
     padding: 20px;
     background-color:black;
-    background: url('../img/FONDO3.jpg') fixed;
+    background: url('../img/FONDOASTRO.jpg') fixed;
+    background-position: center;
 }
 @keyframes rainbow {
     0% { color: red; }
@@ -18,6 +19,7 @@ body {
 .rainbow-text {
     font-size: 50px;
     font-weight: bold;
+    text-align: center;
     text-shadow: 2px 3px 8px black;
     animation: rainbow 7.5s alternate infinite;
 }

@@ -5,12 +5,17 @@ body {
     background: url(../img/FONDO1.webp)fixed;
 
 }
-h1{
+@keyframes desaparecer{
+    0% { opacity: 1;}
+    50% { opacity: 0;}
+    100% { opacity: 1;}
+}
+.titulo{
     text-align: center;
     font-size: 50px;
     color: rgb(57, 57, 57);
     text-shadow: 2px 3px 9px black;
-
+    animation: desaparecer 7s linear infinite;
 }
 /*ASTRO COLORES */
 @keyframes rainbow {

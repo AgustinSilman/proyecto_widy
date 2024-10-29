@@ -9,6 +9,7 @@ h1{
     font-size: 50px;
     color: aliceblue;
 }
+/*ASTRO COLORES */
 @keyframes rainbow {
     0% { color: red; }
     15% { color: orange; }
@@ -19,11 +20,37 @@ h1{
     85% { color: violet; }
     100% { color: red; }
 }
+/* UTOPIA PARPADEO */
 @keyframes parpadeo {
 from {color:white;}
 to {color:black;}
 
 }
+/* RODEO WAVE */
+.wave-text {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 2px 3px 8px black;
+    text-align: center;
+    color:rgb(81, 30, 14);
+    padding-bottom: 17px;
+  }
+
+  .wave-text span {
+    display: inline-block;
+    animation: wave 1s ease-in-out infinite;
+    animation-delay: calc(var(--i) * 0.1s); /* Cada letra tiene un delay diferente */
+  }
+
+  @keyframes wave {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
 
 .parpadeante {
     font-size: 40px;
@@ -31,14 +58,14 @@ to {color:black;}
     text-shadow: 2px 3px 8px black;
     animation: parpadeo 0.3s infinite;
     text-align: center;
-    padding-top: 17px;
+    padding-bottom: 17px;
 }
 .rainbow-text {
     font-size: 40px;
     font-weight: bold;
     text-shadow: 2px 3px 8px black;
     animation: rainbow 7.5s alternate infinite;
-    padding-top: 17px;
+    padding-bottom: 17px;
 }
 .container {
     display: flex;
@@ -49,6 +76,7 @@ to {color:black;}
             top: 25%;
             left: 15%;
 }
+/* CAJAS ANIMADAS */
 .box-1:hover {
     transform: translateY(-10px);
 }
@@ -58,6 +86,8 @@ to {color:black;}
 .box-3:hover {
     transform: translateY(-10px);
 }
+
+/*CAJAS */
 .box-1 {
     background-color: white;
     flex: 1;

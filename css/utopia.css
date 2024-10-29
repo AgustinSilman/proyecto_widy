@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 20px;
     background-color:black;
-    background-image: url('../img/UTO2.jpg');
+    background-image: url('../img/FONDO2.jpg') fixed ;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -47,7 +47,8 @@ h1{
             background-color: #ffffff;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
             text-align: center;
-            transition: transform 0.3s ease;
+            position: relative;
+            transition: transform 0.5s ease;
         }
 .caja-2 {
             flex: 1;
@@ -59,7 +60,8 @@ h1{
             background-color: #ffffff;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
             text-align: center;
-            transition: transform 0.3s ease;
+            position: relative;
+            transition: transform 0.5s ease;
         }
 .caja-3 {
             flex: 1;
@@ -72,19 +74,20 @@ h1{
             background-color: #ffffff;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
             text-align: center;
-            transition: transform 0.3s ease;
+            position: relative;
+            transition: transform 0.5s ease;
         }
 .caja-1:hover {
             height: auto;
-            transform: translateY(-5px);
+            transform: translateY(-7px);
         }
 .caja-2:hover {
             height: auto;
-            transform: translateY(-5px);
+            transform: translateY(-7px);
         }
 .caja-3:hover {
             height: auto;
-            transform: translateY(-5px);
+            transform: translateY(-7px);
         }
 ol li {
         margin: 0;

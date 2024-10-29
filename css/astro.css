@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 20px;
     background-color:black;
-    background-image: url('../img/ASTRO2_1920.jpg');
+    background: url('../img/FONDO3.jpg') fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

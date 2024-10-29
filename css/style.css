@@ -8,7 +8,9 @@ body {
 h1{
     text-align: center;
     font-size: 50px;
-    color: aliceblue;
+    color: rgb(57, 57, 57);
+    text-shadow: 2px 3px 9px black;
+
 }
 /*ASTRO COLORES */
 @keyframes rainbow {
@@ -90,7 +92,7 @@ to {color:black;}
 
 /*CAJAS */
 .box-1 {
-    background-color: white;
+    background-color:rgba(47, 47, 47, 0.45);
     flex: 1;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -108,7 +110,7 @@ to {color:black;}
     }
 }
 .box-2 {
-    background-color: white;
+    background-color:rgba(47, 47, 47, 0.45);;
     flex: 1;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -125,7 +127,7 @@ to {color:black;}
     }
 }
 .box-3 {
-    background-color: white;
+    background-color: rgba(47, 47, 47, 0.45);
     flex: 1;
     border: 1px solid #ccc;
     border-radius: 8px;

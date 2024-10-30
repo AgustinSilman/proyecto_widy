@@ -3,14 +3,10 @@ body {
     margin: 0;
     padding: 20px;
     background-color:black;
-    background: url('../img/RODEOFONDO2.jpg') fixed ;
-    background-position:top;
+    background: url('../img/FONDO2.jpg') fixed ;
 }
-
-
-
-/* RODEO WAVE */
-.wave-text {
+.psichodelic {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: inline-block;
     font-size: 50px;
     font-weight: bold;
@@ -19,34 +15,33 @@ body {
     position: absolute;
     top: 5%;
     left: 42%;
-    color:rgb(81, 30, 14);
+    animation: letter 0.5s linear infinite;
     padding-bottom: 17px;
   }
 
-  .wave-text span {
+  .psichodelic span {
     display: inline-block;
     text-align: center;
-    animation: wave 1s ease-in-out infinite;
+    animation: letter 0.5s ease-in-out infinite;
     animation-delay: calc(var(--i) * 0.1s); /* Cada letra tiene un delay diferente */
   }
 
-  @keyframes wave {
-    0% {
-         transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
+  @keyframes letter {
+    0% { color: rgb(129, 0, 0); }
+    30% { color: rgb(0, 51, 129); }
+    60% {color:rgb(0, 0, 129)}
+    90% { color: rgb(75, 0, 129); }
+    100% { color: black; }
   }
-  .contenedor {
+.contenedor {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
     max-width: 1200px;
     position: absolute;
-        top: 25%;
-        left: 15%;
+    top: 25%;
+    left: 15%;
 }
 .caja-1 {
     flex: 1;

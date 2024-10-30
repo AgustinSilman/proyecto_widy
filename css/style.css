@@ -68,22 +68,22 @@ to {color:black;}
     font-weight: bold;
     text-shadow: 2px 3px 8px black;
     text-align: center;
-    animation: letter 0.5s linear infinite;
+    animation: letter 1s linear infinite;
     padding-bottom: 20px;
   }
 
   .psichodelic span {
     display: inline-block;
-    letter-spacing: -7px;
-    animation: letter 0.5s ease-in-out infinite;
-    animation-delay: calc(var(--i) * 0.1s); /* Cada letra tiene un delay diferente */
+    letter-spacing: -8px;
+    animation: letter 1s ease-in-out infinite;
+    animation-delay: calc(var(--i) * 0.3s); /* Cada letra tiene un delay diferente */
   }
 
   @keyframes letter {
     0% { color: rgb(129, 0, 0); }
-    30% { color: rgb(0, 51, 129); }
-    60% {color:rgb(0, 0, 129)}
-    90% { color: rgb(75, 0, 129); }
+    30% { color: rgb(3, 71, 174); }
+    60% {color:rgb(53, 53, 112)}
+    90% { color: rgb(62, 30, 85); }
     100% { color: black; }
   }
 
@@ -117,7 +117,7 @@ to {color:black;}
     top: 80%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 1100px;
+    width: 1200px;
     height: 750px;        
 }
 /* CAJAS ANIMADAS */
@@ -148,8 +148,8 @@ to {color:black;}
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 15px;
-    width: 300px;
-    height: 320px;
+    width: 320px;
+    height: 330px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align:center;
     position: relative;
@@ -166,7 +166,7 @@ to {color:black;}
     border-radius: 8px;
     padding: 15px;
     width: 320px;
-    height: 320px;
+    height: 330px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     position: relative;
@@ -182,8 +182,8 @@ to {color:black;}
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 15px;
-    width: 300px;
-    height: 320px;
+    width: 320px;
+    height: 330px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     position: relative;
@@ -199,8 +199,8 @@ to {color:black;}
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 15px;
-    width: 300px;
-    height: 320px;
+    width: 320px;
+    height: 330px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     position: relative;
@@ -216,8 +216,8 @@ to {color:black;}
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 15px;
-    width: 300px;
-    height: 320px;
+    width: 320px;
+    height: 330px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     position: relative;

@@ -2,8 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background: url(../img/FONDO1.webp)fixed;
-
+    background: url(../img/FONDO1.webp) fixed;
 }
 @keyframes desaparecer{
     0% { opacity: 1;}
@@ -13,9 +12,9 @@ body {
 .titulo{
     text-align: center;
     font-size: 50px;
-    color: rgb(57, 57, 57);
+    color: rgb(26, 26, 26);
     text-shadow: 2px 3px 9px black;
-    animation: desaparecer 7s linear infinite;
+    animation: desaparecer 4s linear infinite;
 }
 /*ASTRO COLORES */
 @keyframes rainbow {
@@ -76,13 +75,17 @@ to {color:black;}
     padding-bottom: 17px;
 }
 .container {
+    border: 1px solid black;
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
     justify-content: center;
     position: absolute;
-            top: 25%;
-            left: 15%;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1100px;
+    height: 750px;        
 }
 /* CAJAS ANIMADAS */
 .box-1:hover {
@@ -94,16 +97,26 @@ to {color:black;}
 .box-3:hover {
     transform: translateY(-10px);
 }
+.box-4:hover {
+    transform: translateY(-10px);
+}
+.box-5:hover {
+    transform: translateY(-10px);
+}
+
+.container h2{
+    position: relative;
+    bottom: 25px;
+}
 
 /*CAJAS */
 .box-1 {
     background-color:rgba(47, 47, 47, 0.45);
-    flex: 1;
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 15px;
     width: 300px;
-    height: auto;
+    height: 320px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align:center;
     position: relative;
@@ -116,11 +129,11 @@ to {color:black;}
 }
 .box-2 {
     background-color:rgba(47, 47, 47, 0.45);;
-    flex: 1;
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 15px;
-    width: 300px;
+    width: 320px;
+    height: 320px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     position: relative;
@@ -133,11 +146,45 @@ to {color:black;}
 }
 .box-3 {
     background-color: rgba(47, 47, 47, 0.45);
-    flex: 1;
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 15px;
     width: 300px;
+    height: 320px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    transition: transform 0.5s ease;
+    img{
+        width: 80%;
+        height: 80%;
+        object-fit: contain;
+    }
+}
+.box-4 {
+    background-color: rgba(47, 47, 47, 0.45);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    width: 300px;
+    height: 320px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    transition: transform 0.5s ease;
+    img{
+        width: 80%;
+        height: 80%;
+        object-fit: contain;
+    }
+}
+.box-5 {
+    background-color: rgba(47, 47, 47, 0.45);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    width: 300px;
+    height: 320px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     position: relative;

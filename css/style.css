@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 20px;
     background: url(../img/FONDO1.webp) fixed;
+    background-position: 0% 0%;
 }
 @keyframes desaparecer{
     0% { opacity: 1;}
@@ -12,9 +13,9 @@ body {
 .titulo{
     text-align: center;
     font-size: 50px;
-    color: rgb(26, 26, 26);
-    text-shadow: 2px 3px 9px black;
-    animation: desaparecer 1s linear infinite;
+    color: #b3b3b3;
+    text-shadow: 6px 7px 15px black;
+    animation: desaparecer 1.4s linear infinite;
 }
 /*ASTRO COLORES */
 @keyframes rainbow {

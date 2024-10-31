@@ -40,7 +40,7 @@ body {
             padding: 20px;
             overflow: hidden;
             border-radius: 8px;
-            background-color: #ffffff;
+            background-color:rgba(141, 139, 139, 0.597);
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
             text-align: center;
             transition: transform 0.5s ease;
@@ -52,7 +52,7 @@ body {
             padding: 20px;
             overflow: hidden;
             border-radius: 8px;
-            background-color: #ffffff;
+            background-color:rgba(141, 139, 139, 0.597);
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
             text-align: center;
             transition: transform 0.5s ease;
@@ -65,7 +65,7 @@ body {
             overflow: hidden;
             display: inline-block;
             border-radius: 8px;
-            background-color: #ffffff;
+            background-color:rgba(141, 139, 139, 0.597);
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
             text-align: center;
             transition: transform 0.5s ease;

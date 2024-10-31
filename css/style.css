@@ -89,10 +89,6 @@ to {color:black;}
 
 .parpadeante {
     font-family: Utopia_Regular;
-    @font-face {
-        font-family: Utopia_Regular;
-        src: local("fonts"), local("utopia-regular_wqNW0"), url("Utopia_Regular");
-    }
     font-size: 40px;
     font-weight: bold;
     text-shadow: 2px 3px 8px black;

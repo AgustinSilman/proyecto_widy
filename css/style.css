@@ -1,3 +1,5 @@
+@import url("../fonts/utopia-regular_wqNW0/Utopia__Regular.ttf");
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -89,7 +91,8 @@ to {color:black;}
     font-family: Utopia_Regular;
     @font-face {
         font-family: Utopia_Regular;
-        src: url('https://fontsgeek.com/fonts/utopia-regular?ref=readme');
+        src: local("fonts"), local("utopia-regular_wqNW0"), url("Utopia_Regular")
+
     }
     font-size: 40px;
     font-weight: bold;

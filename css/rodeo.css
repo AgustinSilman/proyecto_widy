@@ -110,3 +110,14 @@ margin: 0;
 padding-left: 20px; /* Ajusta el espacio entre el borde izquierdo y el número */
 list-style-position: inside; /* Hace que los números estén dentro de los elementos <li> */
 }
+.caja-4{
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+        top: 75px;
+        left:200px;
+    img{
+    width: 70px;
+    height: 80px;
+    }
+}

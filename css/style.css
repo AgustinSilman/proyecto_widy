@@ -7,6 +7,43 @@ body {
     background: url(../img/FONDO1.webp) fixed;
     background-position: 0% 0%;
 }
+@keyframes vintage{
+    0%{
+        opacity: 1;
+        color:limegreen;
+    }
+    30%{
+        opacity:0.5;
+        color:darkgoldenrod;
+    }
+    45%{
+        opacity: 1;
+        color:darkgoldenrod;
+    }
+    60%{
+        opacity: 0.5;
+        color:darkorange;
+    }
+    75%{
+        opacity: 1;
+        color:darkorange;
+    }
+    85%{
+        opacity: 0.5;
+        color:darkorchid;
+    }
+    100%{
+        opacity: 1;
+        color:darkorchid;
+    }
+}
+.vintage {
+font-size: 50px;
+font-weight: bold;
+animation:vintage 7s alternate infinite;
+text-align: center;
+padding-bottom: 30px;
+}
 @keyframes desaparecer{
     0% { opacity: 1;}
     50% { opacity: 0;}

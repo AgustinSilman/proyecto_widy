@@ -269,6 +269,29 @@ to {color:black;}
         object-fit: contain;
     }
 }
+
+.BARRA ul {
+    display: flex;  
+    flex-direction: row;
+}
+
+.BARRA, li{
+    list-style: none;
+    margin:auto 15px;
+    
+}
+
+.menu-desplazable {
+    display: none;
+    flex-direction: column;
+}   
+
+.BARRA li:hover .menu-desplazable {
+    display: flex;
+    list-style: none;
+    float:left;
+    margin:5px 15px;
+}
 /*
 .gif- {
     background-image: url(travisnazi.gif)  ;

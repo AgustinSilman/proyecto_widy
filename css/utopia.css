@@ -1,3 +1,5 @@
+@import url('../fonts/utopia/Utopia__Regular.ttf');
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -12,45 +14,44 @@ body {
     60% { color: #808080; } /* Gris medio */
     80% { color: #4d4d4d; } /* Gris medio-oscuro */
     100% { color: black; }
-
 }
 
 .parpadeante {
     font-size: 50px;
-    font-weight: bold;
     animation: parpadeo 0.3s infinite;
     text-align: center;
     padding-top: 17px;
+    font-family: url('../fonts/utopia/Utopia__Regular.ttf');
 }
 .contenedor {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr; 
-            grid-template-rows: auto auto;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            max-width: 1200px;
-            position: absolute;
-            top: 25%;
-            left: 15%;
-        }
-        .caja-1 {
-            position: relative;
-            width: 300px;
-            height:280px;
-            padding: 20px;
-            overflow: hidden;
-            border-radius: 8px;
-            background-color:rgba(141, 139, 139, 0.597);
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-            text-align: center;
-            transition: all 10s ease-in-out;
-            img{
-                width: 80%;
-                height: 80%;
-                object-fit: contain;
-            }
-        }
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: auto auto;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+}
+.caja-1 {
+    position: relative;
+    width: 300px;
+    height:280px;
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color:rgba(141, 139, 139, 0.597);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: all 10s ease-in-out;
+    img{
+        width: 80%;
+        height: 80%;
+        object-fit: contain;
+    }
+}
 
 .last {
     position: absolute;
@@ -59,9 +60,8 @@ body {
     left: 30px;
 }
 .caja-1:hover {
-    
-            height: auto;
-            transform: translateY(-7px);
+    height: auto;
+    transform: translateY(-7px);
 }
 
 .caja-1:hover .first {

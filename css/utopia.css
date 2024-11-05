@@ -31,9 +31,8 @@ body {
     gap: 20px;
     flex-wrap: wrap;
     max-width: 1200px;
-    position: absolute;
-    top: 25%;
-    left: 15%;
+    position:relative;
+    left:6%;
 }
 .caja-1 {
     position: relative;

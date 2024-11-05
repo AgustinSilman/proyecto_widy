@@ -47,14 +47,15 @@ h1{
     color:white;
 }
 .contenedor {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: auto auto;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
     max-width: 1200px;
-    position: absolute;
-    top: 25%;
-    left: 15%;
+    position:relative;
+    left: 5.5%;
 }
 .caja-1 {
     position: relative;
@@ -75,10 +76,10 @@ h1{
 }
 
 .last {
-position: absolute;
-opacity: 0;
-top: 60px;
-left: 30px;
+    position: absolute;
+    opacity: 0;
+    top: 60px;
+    left: 30px;
 }
 .caja-1:hover {
 
@@ -87,20 +88,20 @@ left: 30px;
 }
 
 .caja-1:hover .first {
-opacity: 0;
+    opacity: 0;
 }
 
 .caja-1:hover .last {
-opacity: 1;
+    opacity: 1;
 }
 .caja-4{
-justify-content: center;
-text-align: center;
-position: absolute;
-top: 75px;
-left:200px;
-img{
-width: 70px;
-height: 80px;
-}
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 75px;
+    left:200px;
+    img{
+        width: 70px;
+        height: 80px;
+    }
 }

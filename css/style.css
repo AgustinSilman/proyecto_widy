@@ -143,16 +143,23 @@ to {color:black;}
     width: 1200px;
     height: 200px;
 }
-.lista{
-    list-style: none;
-    gap:25px;
-}
 .lista li{
     display: inline;
     gap:25px;
 }
-.menu-desplazable{
+.lista li a{
+    color:black;
+    margin-left: 2%;
+}
+@keyframes barra {
+    
+}
+.menu-desplazable li a{
     display: inline-block;
+    color:red;
+    gap:35px;
+    padding-top: 1%;
+    margin-left: 8%;
 }
 
 .container {

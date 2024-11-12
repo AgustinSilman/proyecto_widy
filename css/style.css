@@ -7,157 +7,145 @@ body {
     background: url(../img/FONDO1.webp) fixed;
     background-position: 0% 0%;
 }
-@keyframes vintage{
-    0%{
-        opacity: 1;
-        color:limegreen;
-    }
-    30%{
-        opacity:0.5;
-        color:darkgoldenrod;
-    }
-    45%{
-        opacity: 1;
-        color:darkgoldenrod;
-    }
-    60%{
-        opacity: 0.5;
-        color:darkorange;
-    }
-    75%{
-        opacity: 1;
-        color:darkorange;
-    }
-    85%{
-        opacity: 0.5;
-        color:darkorchid;
-    }
-    100%{
-        opacity: 1;
-        color:darkorchid;
-    }
+
+/* Texto vintage animado */
+@keyframes vintage {
+    0% { opacity: 1; color: limegreen; }
+    30% { opacity: 0.5; color: darkgoldenrod; }
+    45% { opacity: 1; color: darkgoldenrod; }
+    60% { opacity: 0.5; color: darkorange; }
+    75% { opacity: 1; color: darkorange; }
+    85% { opacity: 0.5; color: darkorchid; }
+    100% { opacity: 1; color: darkorchid; }
 }
+
 .vintage {
-font-size: 50px;
-animation:vintage 7s alternate infinite;
-text-align: center;
-padding-bottom: 30px;
-}
-@keyframes desaparecer{
-    0% { opacity: 1;}
-    50% { opacity: 0.75;}
-    100% { opacity: 1;}
-}
-h1{
+    font-size: 3rem;
+    animation: vintage 7s alternate infinite;
     text-align: center;
-    font-size: 40px;
+    padding-bottom: 1rem;
+}
+
+/* Efecto de desaparición */
+@keyframes desaparecer {
+    0% { opacity: 1; }
+    50% { opacity: 0.75; }
+    100% { opacity: 1; }
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
     text-shadow: 2px 3px 10px rgb(255, 106, 131);
 }
-.titulo{
+
+.titulo {
     text-align: center;
-    font-size: 50px;
+    font-size: 3rem;
     color: #b3b3b3;
     text-shadow: 6px 7px 15px black;
     animation: desaparecer 1.4s linear infinite;
 }
-/*ASTRO COLORES */
+
+/* Animación arco iris */
 @keyframes rainbow {
     0% { color: red; }
     15% { color: orange; }
     30% { color: yellow; }
-    45% { color:  rgb(18, 217, 18); }
+    45% { color: rgb(18, 217, 18); }
     60% { color: rgb(0, 102, 255); }
     70% { color: rgb(125, 4, 212); }
     85% { color: violet; }
     100% { color: red; }
 }
-/* UTOPIA PARPADEO */
-@keyframes parpadeo {
-from {color:white;}
-to {color:black;}
 
+/* Animación de parpadeo */
+@keyframes parpadeo {
+    from { color: white; }
+    to { color: black; }
 }
-/* RODEO WAVE */
+
 .wave-text {
     display: inline-block;
-    font-size: 40px;
+    font-size: 2rem;
     text-shadow: 2px 3px 8px black;
     text-align: center;
-    color:rgb(81, 30, 14);
-    padding-bottom: 17px;
-  }
+    color: rgb(81, 30, 14);
+    padding-bottom: 1rem;
+}
 
-  .wave-text span {
+.wave-text span {
     display: inline-block;
     animation: wave 1s ease-in-out infinite;
-    animation-delay: calc(var(--i) * 0.1s); /* Cada letra tiene un delay diferente */
-  }
+    animation-delay: calc(var(--i) * 0.1s);
+}
 
-  @keyframes wave {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-  }
-  .psichodelic {
+@keyframes wave {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Animación psicodélica */
+.psichodelic {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: inline-block;
-    font-size: 31px;
+    font-size: 1.8rem;
     text-shadow: 2px 3px 8px black;
     text-align: center;
     animation: letter 1s linear infinite;
-    padding-bottom: 20px;
-  }
+    padding-bottom: 1rem;
+}
 
-  .psichodelic span {
+.psichodelic span {
     display: inline-block;
     letter-spacing: -8px;
     animation: letter 1s ease-in-out infinite;
-    animation-delay: calc(var(--i) * 0.3s); /* Cada letra tiene un delay diferente */
-  }
+    animation-delay: calc(var(--i) * 0.3s);
+}
 
-  @keyframes letter {
+@keyframes letter {
     0% { color: rgb(129, 0, 0); }
     30% { color: rgb(3, 71, 174); }
-    60% {color:rgb(53, 53, 112)}
+    60% { color: rgb(53, 53, 112); }
     90% { color: rgb(62, 30, 85); }
     100% { color: black; }
-  }
+}
 
 .parpadeante {
-    font-size: 40px;
+    font-size: 2rem;
     text-shadow: 2px 3px 8px black;
     animation: parpadeo 0.3s infinite;
     text-align: center;
-    padding-bottom: 17px;
+    padding-bottom: 1rem;
 }
+
 .rainbow-text {
-    font-size: 40px;
+    font-size: 2rem;
     text-shadow: 2px 3px 8px black;
     animation: rainbow 7.5s alternate infinite;
-    padding-bottom: 17px;
+    padding-bottom: 1rem;
 }
-.BARRA{
-    width: 1200px;
-    height: 200px;
+
+.BARRA {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
 }
-.lista li{
+
+.lista li {
     display: inline;
-    gap:25px;
+    gap: 25px;
 }
-.lista li a{
-    color:black;
+
+.lista li a {
+    color: black;
     margin-left: 2%;
 }
-@keyframes barra {
-    
-}
-.menu-desplazable li a{
+
+.menu-desplazable li a {
     display: inline-block;
-    color:red;
-    gap:35px;
+    color: red;
+    gap: 35px;
     padding-top: 1%;
     margin-left: 8%;
 }
@@ -165,39 +153,64 @@ to {color:black;}
 .container {
     display: flex;
     flex-wrap: wrap;
-    gap: 32px;
+    gap: 16px;
     justify-content: center;
-    position: absolute;
-    top: 95%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 1200px;
-    height: 750px;        
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-/* CAJA ANIMADA */
-.box-1:hover {
-    transform: translateY(-10px);
-}
-.container h2{
+
+.container h2 {
     position: relative;
     bottom: 25px;
 }
 
-/*CAJAS */
 .box-1 {
-    background-color:rgba(47, 47, 47, 0.45);
+    background-color: rgba(47, 47, 47, 0.45);
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 15px;
-    width: 320px;
-    height: 330px;
+    width: calc(100% / 3 - 20px);
+    max-width: 320px;
+    height: auto;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align:center;
-    position: relative;
+    text-align: center;
     transition: transform 0.5s ease;
-    img{
-        width: 80%;
-        height: 80%;
-        object-fit: contain;
+}
+
+.box-1:hover {
+    transform: translateY(-10px);
+}
+
+.box-1 img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .vintage, .titulo, h1, .parpadeante, .rainbow-text, .wave-text, .psichodelic {
+        font-size: 1.5rem;
+    }
+    
+    .container {
+        gap: 12px;
+    }
+    
+    .box-1 {
+        width: calc(100% / 2 - 10px);
+        max-width: none;
+    }
+}
+
+/* Media Query para pantallas extra pequeñas */
+@media (max-width: 480px) {
+    .vintage, .titulo, h1, .parpadeante, .rainbow-text, .wave-text, .psichodelic {
+        font-size: 1.2rem;
+    }
+
+    .box-1 {
+        width: 100%;
     }
 }

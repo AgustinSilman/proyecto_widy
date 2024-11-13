@@ -2,8 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background: url(../img/FONDO1.webp) fixed;
-    background-position: 0% 0%;
+    background: url("../img/ASTRO1_600.jpg") fixed;
+    background-position: 50% 50%;
 }
 
 h2 {
@@ -17,4 +17,53 @@ h2 {
     font-size: 3rem;
     color: #b3b3b3;
     text-shadow: 6px 7px 15px black;
+}
+
+p {
+    text-align: center;
+    font-size: 1.5rem;
+    text-shadow: #b3b3b3;
+}
+.caja-4{
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 65px;
+    left:200px;
+    img{
+        width: 70px;
+        height: 80px;
+    }
+}
+
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 480px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    .parpadeante {
+        font-size: 1.5rem;
+    }
+
+    .caja-1 {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .last {
+        top: 40px;
+        left: 20px;
+    }
+
+    .caja-4 {
+        top: 50px;
+        left: 100px;
+    }
+
+    .caja-4 img {
+        width: 50px;
+        height: 60px;
+    }
 }

@@ -1,4 +1,3 @@
-@import url('../fonts/utopia/Utopia__Regular.ttf');
 
 body {
     font-family: Arial, sans-serif;
@@ -44,7 +43,6 @@ h1 {
     font-size: 3rem;
     color: #b3b3b3;
     text-shadow: 6px 7px 15px black;
-    animation: desaparecer 1.4s linear infinite;
 }
 
 /* Animación arco iris */

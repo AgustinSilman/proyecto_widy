@@ -107,7 +107,7 @@ body {
     }
 
     .caja-1 {
-        max-width: 100%;
+        width:100%;
         padding: 15px;
         height: auto;
         position: relative;

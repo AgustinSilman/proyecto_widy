@@ -35,7 +35,7 @@ body {
     flex-wrap: wrap;
     max-width: 1200px;
     position:relative;
-    left:6%;
+    left:10%;
 }
 
 .caja-1 {
@@ -91,7 +91,7 @@ body {
 /* Media Query para pantallas medianas */
 @media (max-width: 768px) {
     .contenedor {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 
     .parpadeante {
@@ -102,6 +102,8 @@ body {
         max-width: 100%;
         padding: 15px;
         height: auto;
+        position: relative;
+        left:20%;
     }
 
     .caja-4 {

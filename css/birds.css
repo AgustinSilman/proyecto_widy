@@ -36,14 +36,16 @@ body {
     100% { color: black; }
   }
 .contenedor {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: auto auto;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
     max-width: 1200px;
-    position: absolute;
-    top: 26%;
-    left: 10%;
+    position:relative;
+    left:10%;
+    bottom: -175px;
 }
 .caja-1 {
     position: relative;
@@ -83,7 +85,7 @@ body {
 /* Media Query para pantallas medianas */
 @media (max-width: 768px) {
     .contenedor {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 
     .parpadeante {
@@ -94,6 +96,8 @@ body {
         max-width: 100%;
         padding: 15px;
         height: auto;
+        position: relative;
+        left:20%;
     }
 
     .caja-4 {

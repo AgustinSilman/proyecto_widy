@@ -2,27 +2,49 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background: url("../img/ASTRO1_600.jpg") fixed;
-    background-position: 50% 50%;
+    background: url("../img/nache.jpg") fixed;
+    background-size: 147px 100px;
 }
 
 h2 {
     text-align: center;
     font-size: 2.5rem;
-    text-shadow: 2px 3px 10px rgb(255, 106, 131);
+    text-shadow:2px 3px 7px rgb(255, 255, 255);
 }
 
 .titulo {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
     text-align: center;
+    top:35px;
     font-size: 3rem;
-    color: #b3b3b3;
-    text-shadow: 6px 7px 15px black;
+    color: white;
+    text-shadow: 
+    0 0 5px #ffffff, 
+    0 0 10px #ffffff, 
+    0 0 15px #ffffff, 
+    0 0 20px #ffffff, 
+    0 0 25px #ffffff, 
+    0 0 30px #ffffff, 
+    0 0 35px #ffffff;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column; 
+
 }
 
 p {
+    position: relative;
+    left: 30%;
+    width: 40%;
+    text-wrap: wrap;
     text-align: center;
-    font-size: 1.5rem;
-    text-shadow: #b3b3b3;
+    font-size: 1.7rem;
+    color:#ad6807;
+    text-shadow:1px 2px 4px black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .caja-4{
     justify-content: center;
@@ -35,6 +57,22 @@ p {
         height: 80px;
     }
 }
+/* Media Query para pantallas medianas */
+@media (max-width: 768px) {
+    .contenedor {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .caja-4 {
+        top: 50px;
+        left: 100px;
+    }
+
+    .caja-4 img {
+        width: 50px;
+        height: 60px;
+    }
+}
 
 
 /* Media Query para pantallas pequeñas */
@@ -43,23 +81,9 @@ p {
         grid-template-columns: 1fr;
     }
 
-    .parpadeante {
-        font-size: 1.5rem;
-    }
-
-    .caja-1 {
-        max-width: 100%;
-        padding: 10px;
-    }
-
-    .last {
-        top: 40px;
-        left: 20px;
-    }
-
     .caja-4 {
         top: 50px;
-        left: 100px;
+        left: 70px;
     }
 
     .caja-4 img {
